@@ -1,0 +1,34 @@
+{% extends 'base.html.twig' %}
+
+    {% block body %}
+
+    <h1>Ma page Home</h1>
+
+    <a href="{{ path('hello-base') }}">Profil</a>
+
+    {% if acces == 'admin' %}
+
+        <p>Bienvenue administrateur</p>
+
+        {% else %}
+
+        <p>Bonjour cher visiteur</p>
+
+    {% endif %}
+
+    {% for nom,acces in tableau %}
+        <!-- equivaut à true si l'on se trouve sur la 1ere itération de la boucle -->
+        {% if loop.first %}
+
+        <p><strong>{{ nom|upper }}</strong> a un niveau d'accès suivant : {{ acces }}</p>
+
+        {% else %}
+
+        <p>{{ nom }} a un niveau d'accès suivant : {{ acces }}</p>
+
+        {% endif %}
+
+    {% endfor %}
+
+    {% endblock %}
+    
