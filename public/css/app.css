@@ -1,0 +1,11 @@
+body{background-color: #f3efef;}
+
+.container{margin-top: 1.2em;}
+
+.title .container{margin-top: 0;}
+.title{background-size: cover; background-position: center center; padding: 1em;}
+.title h1, .title p{color: #fff;text-shadow: 3px 3px 3px rgba(0,0,0,0.5);}
+
+.carousel-caption{text-shadow: 3px 3px 3px rgba(0,0,0,0.5);}
+
+footer{width: 100%;color:#f3efef; margin-top: 5em;}
