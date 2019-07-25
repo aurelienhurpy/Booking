@@ -1,5 +1,8 @@
 body{background-color: #f3efef;}
 
+a{color:indianred;}
+a:hover{color:indianred;}
+
 .container{margin-top: 1.2em;}
 
 .title .container{margin-top: 0;}
@@ -14,3 +17,5 @@ body{background-color: #f3efef;}
 .avatar-small{max-width: 32px; max-height: 32px;}
 
 footer{width: 100%;color:#f3efef; margin-top: 5em;}
+
+.datepicker table tr td.disabled, .datepicker table tr td.disabled:hover{color:darkred!important; text-decoration: line-through;}
