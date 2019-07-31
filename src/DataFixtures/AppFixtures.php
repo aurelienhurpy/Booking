@@ -8,6 +8,7 @@ use App\Entity\Role;
 use App\Entity\User;
 use App\Entity\Image;
 use App\Entity\Booking;
+use App\Entity\Comment;
 use Cocur\Slugify\Slugify;
 use Doctrine\Bundle\FixturesBundle\Fixture;
 use Doctrine\Common\Persistence\ObjectManager;
@@ -141,6 +142,22 @@ class AppFixtures extends Fixture
 
                 $manager->persist($booking);
 
+                // gestion des commentaires
+
+                if(mt_rand(0,1)){
+
+                    $comment = new Comment();
+                    
+                    $comment->setContent($faker->paragraph())
+                    ->setRating(mt_rand(1,5))
+                    ->setAuthor($booker)
+                    ->setAd($ad)
+                    ;
+
+                    $manager->persist($comment);
+                    
+                }
+                    
             }
         }
         $manager->flush();

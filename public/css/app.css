@@ -1,4 +1,4 @@
-body{background-color: #f3efef;}
+body{background-color: #f3efef; color:#232323;}
 
 a{color:indianred;}
 a:hover{color:indianred;}
@@ -15,7 +15,16 @@ a:hover{color:indianred;}
 
 .avatar-medium{max-width: 64px; max-height: 64px;}
 .avatar-small{max-width: 32px; max-height: 32px;}
+.avatar-xs{max-width: 26px; max-height: 26px;}
 
 footer{width: 100%;color:#f3efef; margin-top: 5em;}
 
 .datepicker table tr td.disabled, .datepicker table tr td.disabled:hover{color:darkred!important; text-decoration: line-through;}
+
+blockquote{font-style: oblique; color: rgb(90, 81, 81);}
+
+.rating i {color: goldenrod;}
+
+small{text-transform: initial;}
+
+.table-primary{background: #232323; color: #f1f1f1;}
